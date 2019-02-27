@@ -76,7 +76,6 @@ footer ul {
 
 .main form {
     width: 90%;
-    height: 100px;
     margin: 3px auto;
     border-radius: 3px;
     background-color: rgba(250, 246, 246, 0.7);
@@ -166,6 +165,7 @@ form button {
 }
 
 .result {
+    font-size: 0.8em;
     display: block;
     width: 90%;
     margin: 10px auto;
@@ -177,15 +177,15 @@ form button {
 
 }
 .result img {
-    width: 30%;
-    height: 250px;
+    width: 50%;
+    height: 170px;
 }
 .result div {
     width: 65%;
 }
 .result p {
-    font-size: 1.1em;
-    padding-right: 40px;
+    
+
     text-align: end;
 }
 .result h1 {
@@ -198,6 +198,33 @@ form button {
     width: 90%;
     margin: auto;
 }
+
+.form-large {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-set {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin: 2px;
+}
+.form-large input {
+     width: 90%;
+     margin: auto;
+     box-sizing: border-box;
+ }
+
+ select {
+  /* width: 25%; */
+  margin: auto;
+  box-sizing: border-box;
+}
+
 @media (min-width: 992px) {
     body {
         background-repeat: no-repeat;
@@ -286,6 +313,18 @@ form button {
   /* object-fit: contain; */
 }
 
+.result img {
+    width: 30%;
+    height: 250px;
+}
+.result div {
+    width: 65%;
+}
+.result p {
+    font-size: 1.1em;
+    padding-right: 40px;
+    text-align: end;
+}
 
 footer {
     position: fixed;
