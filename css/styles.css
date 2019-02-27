@@ -10,10 +10,11 @@ body {
 }
 
 nav {
-    /* position: absolute; */
+    
     width: 100%;
     display: flex;
     flex-flow: column;
+    justify-content: center;
     background-color: #62c4f3;
     /* border-radius: 5px; */
 }
@@ -38,6 +39,11 @@ nav ul li {
 .nav-lists-box {
     flex-direction: column-reverse;
 }
+.nav-lists-box h1 {
+    font-family: 'Satisfy', cursive;
+    color: white;
+    text-align: center;
+}
 nav img {
     margin-left: 3px;
     max-width: 170px;
@@ -49,7 +55,9 @@ footer {
 
     height: 80px;
     width: 100%;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #62c4f3;
 }
 footer ul {
@@ -64,11 +72,13 @@ footer ul {
 
 .main form {
     width: 90%;
+    height: 100px;
     margin: 3px auto;
     border-radius: 3px;
     background-color: rgba(250, 246, 246, 0.7);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 input {
     margin: 2px auto;
@@ -77,6 +87,13 @@ input {
     width: 90%;
     border-radius: 10px;
    
+}
+select {
+    margin: 2px auto;
+    padding: 0 2px;
+    height: 35px;
+    width: 90%;
+  
 }
 form button {
     margin: 2px auto;
@@ -115,6 +132,12 @@ form button {
     position: absolute;
     top: 0;
 }
+.overlay h3 {
+    text-align: center;
+}
+.overlay h5 {
+    text-align: end;
+}
 .card:nth-child(1) {
     grid-area: 'offer1';
 }
@@ -138,6 +161,9 @@ form button {
     /* aligning down icons */
     margin: 2px 2px 2px 2px;
 }
+
+
+
 @media (min-width: 992px) {
     body {
         background-repeat: no-repeat;
@@ -172,26 +198,48 @@ form button {
     }
    .main form {
        margin-top: 5px;
-       height: 50px;
+     
        flex-direction: row;
        justify-content: space-between;
        padding: 10px;
    }
-   
-   input {
-       width: 30%;
+   .index-form {
+    height: 50px;
+   }
+   .index-form input {
+       width: 40%;
+
        margin: auto;
        box-sizing: border-box;
    }
+   .form-large {
+       height: 150px;
+   }
+  .form-set {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+  }
+  .form-large input {
+       width: 25%;
+       margin: auto;
+       box-sizing: border-box;
+   }
+
+   select {
+    /* width: 25%; */
+    margin: auto;
+    box-sizing: border-box;
+}
+
    form button {
-    width: 30%;
+    width: 25%;
     margin: auto;
    }
    .offers {
 
     grid:
     'offer1 offer2 offer3';
-
     grid-template-rows: 300px;
    }
 
@@ -210,6 +258,7 @@ footer {
     position: fixed;
     left: 0px;
     bottom: 0px;
+    justify-content: space-around;
 }
 
 
