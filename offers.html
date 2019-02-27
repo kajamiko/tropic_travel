@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -36,7 +36,8 @@
         </div>
         </nav>
     <section class="main">
-        <h1>Filter your search</h1>
+           
+        <h5>Filter your search</h5>
         <form class="form-large">
             <input type="text" name="destination" placeholder="Select a country">
             <div class="form-set">
@@ -51,6 +52,10 @@
                 </select>
             </div>
             <div class="form-set">
+                    <label for="start_date">Start date- not required</label>
+                    <input name="star_Date" placeholder="start date...">
+            </div>
+            <div class="form-set">
                     <label for="party">Duration</label>
                 <select name="party" size="4" >
                         <option value="7" selected>7 days</option>
@@ -62,36 +67,64 @@
             <!-- <input type="text" name="destination" placeholder="Duration"> -->
             <button type="submit" >Find an offer</button>
         </form>
-        <h1>What's hot?</h1>
-        <div class="results">
+       
+        <div class="result">
+            <img src="images/Java.jpg">
             
-            
-                   
-                        
-                   
+            <div>
+                <h1>South India & Goa</h1>
+                <p>Price: 2155 pp</p>
+                <p>Duration: 9days</p>
+                <p>Start date: 01/10/2019</p>
+                <h1>Bed & breakfast</h1>
+            </div>   
         </div>
         
+        <div class="result">
+                <img src="images/Kenya.jpg">
+                
+                <div>
+                    <h1>Kenya</h1>
+                    <p>Price: 1999 pp</p>
+                    <p>Duration: 14days</p>
+                    <p>Start date: 18/12/2019</p>
+                    <h1>Bed & breakfast</h1>
+                </div>   
+            </div>
+
+            <div class="result">
+                    <img src="images/Nepal.jpg">
+                    
+                    <div>
+                        <h1>India & Nepal</h1>
+                        <p>Price: 2155 pp</p>
+                        <p>Duration: 9days</p>
+                        <p>Start date: 01/10/2019</p>
+                        <h1>Bed & breakfast</h1>
+                    </div>   
+                </div>
     </section>
 
 
-<footer>
-    <ul>
-        <li>
-            Contact info
-        </li>
-        <li>Content</li>
-    </ul>
-    <ul>
-        <li>Content</li>
-        <li>Content</li>
-        <li>Content</li>
-    </ul>
-    <ul>
-            <li>Content</li>
-            <li>Content</li>
-            <li>Content</li>
-    </ul>
-</footer>
+
+    <footer>
+            <ul>
+                <li>
+                    Contact info
+                </li>
+                <li>Our partners</li>
+            </ul>
+            <ul>
+                <li>FAQ</li>
+                <li>T&Cs</li>
+                <li>Sitemap</li>
+            </ul>
+            <ul>
+                    <li>Escorted tours</li>
+                    <li>Travel insurance</li>
+                    <li>Sponsors</li>
+            </ul>
+        </footer>
   <!-- <script src="js/scripts.js"></script> -->
 </body>
 </html>
